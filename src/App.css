@@ -38,3 +38,13 @@ form {
   background-color: #fda085;
   border: 0px;
 }
+
+.fullDisplay {
+  display: none;
+  min-height: 30vh;
+  border: 10px;
+  border-color: black;
+  display: flex;
+  flex-direction: column;
+
+}

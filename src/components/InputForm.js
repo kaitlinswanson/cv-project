@@ -1,12 +1,25 @@
 import React from 'react'; 
 
-const InputForm = () => {
+const InputForm = ({setInputName, inputName}) => {
+
+    const inputNameHandler = (e) => {
+        console.log(e.target.value);
+        setInputName(e.target.value);
+    }
+
+    const submitHandler = (e) => {
+        //stops it from refreshing
+        e.preventDefault();
+        //hide display
+        document.getElementById("form").style.display = "none"
+        //setInputName("");
+    }
 
 
     return (
-        <form>
+        <form id="form">
             <label>Name: 
-            <input className="name"></input>
+            <input value={inputName} onChange={inputNameHandler} className="name" type="text"></input>
             </label>
             <label>Email: 
             <input className="email"></input>
@@ -21,7 +34,7 @@ const InputForm = () => {
             <label>Experience:
             <input className="experience"></input>
             </label>
-        <button className="submit" type="submit">Submit</button>
+        <button onClick={submitHandler} className="submit" type="submit">Submit</button>
         </form>
     )
 }
