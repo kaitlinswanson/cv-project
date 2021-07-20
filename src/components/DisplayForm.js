@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DisplayForm = ({inputName}) => {
+const DisplayForm = ({inputName, inputEmail, inputPhone, inputEducation, inputExperience}) => {
 
     const editHandler = (e) => {
         e.preventDefault();
@@ -11,10 +11,10 @@ const DisplayForm = ({inputName}) => {
         <section className="fullDisplay">
         <div className="display">
             <div className="nameDisplay">Name:{inputName}</div>
-            <div className="phoneDisplay">Phone:</div>
-            <div className="emailDisplay">Email:</div>
-            <div className="educationDisplay">Education:</div>
-            <div className="experienceDisplay">Experience:</div>
+            <div className="phoneDisplay">Phone:{inputPhone}</div>
+            <div className="emailDisplay">Email:{inputEmail}</div>
+            <div className="educationDisplay">Education:{inputEducation}</div>
+            <div className="experienceDisplay">Experience:{inputExperience}</div>
             <button onClick={editHandler} className="edit">Edit</button>
         </div>
         </section>

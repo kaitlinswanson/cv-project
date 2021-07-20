@@ -9,6 +9,10 @@ function App() {
 
 // states 
 const [inputName, setInputName] = useState("");
+const [inputEmail, setInputEmail] = useState("");
+const [inputPhone, setInputPhone] = useState("");
+const [inputEducation, setInputEducation] = useState("");
+const [inputExperience, setInputExperience] = useState("");
 
   return (
     <div className="App">
@@ -16,9 +20,25 @@ const [inputName, setInputName] = useState("");
     <InputForm 
     inputName={inputName}
     setInputName={setInputName}
+
+    inputEmail={inputEmail}
+    setInputEmail={setInputEmail}
+
+    inputPhone={inputPhone}
+    setInputPhone={setInputPhone}
+
+    inputEducation={inputEducation}
+    setInputEducation={setInputEducation}
+
+    inputExperience={inputExperience}
+    setInputExperience={setInputExperience}
     />
     <DisplayForm
     inputName={inputName}
+    inputEmail={inputEmail}
+    inputPhone={inputPhone}
+    inputEducation={inputEducation}
+    inputExperience={inputExperience}
     />
     </div>
   )
