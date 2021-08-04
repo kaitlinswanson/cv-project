@@ -56,14 +56,14 @@ form {
  .submit { 
   color: white;
   font-family: "Poppins", sans-serif;
-  background-color: #fda085;
+  background-color: #199e2a;
   border: 0px;
 }
 
 #edit { 
   color: white;
   font-family: "Poppins", sans-serif;
-  background-color: #fda085;
+  background-color: #e6413b;
   border: 0px;
   display: none;
   width: 30px;

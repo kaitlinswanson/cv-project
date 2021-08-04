@@ -51,6 +51,7 @@ const InputForm = ({setInputName, inputName, setInputEmail, inputEmail, inputPho
             <label>Experience: <br></br>
             <input value={inputExperience} onChange={inputExperienceHandler} className="experience"></input>
             </label>
+            <br></br>
         <button onClick={submitHandler} className="submit" type="submit">Submit</button>
         </form>
     )
