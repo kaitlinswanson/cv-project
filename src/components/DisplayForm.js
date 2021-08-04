@@ -15,8 +15,8 @@ const DisplayForm = ({inputName, inputEmail, inputPhone, inputEducation, inputEx
             <div className="emailDisplay">Email:{inputEmail}</div>
             <div className="educationDisplay">Education:{inputEducation}</div>
             <div className="experienceDisplay">Experience:{inputExperience}</div>
-            <button onClick={editHandler} className="edit">Edit</button>
         </div>
+        <button onClick={editHandler} className="edit">Edit</button>
         </section>
     )
 }

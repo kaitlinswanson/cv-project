@@ -2,49 +2,70 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-  color: white;
-  font-family: "Poppins", sans-serif;
-  min-height: 100vh;
 }
 
 header {
   font-size: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 50px;
 }
 
+body {
+  background-image: linear-gradient(120deg, #87a8e7 0%, #4858b1 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.Elements { 
+  display: flex;
+  justify-content: space-evenly;
+}
 
 form {
-  min-height: 20vh;
+  min-height: 50vh;
   display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: flex-start;
   flex-direction: column;
+  align-content: center;
+  padding: 20px;
 }
 
 .education, .experience {
   min-height: 8vh;
+  width: 240px;
   padding: 8px;
 }
 
-.submit { 
+.fullDisplay {
+  min-height: 30vh;
+  min-width: 50vh;
+  border: 1px solid rgb(205, 221, 243);
+  justify-content: baseline;
+  padding: 10px;
+}
+
+ .display { 
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+ }
+
+ .submit { 
   color: white;
   font-family: "Poppins", sans-serif;
   background-color: #fda085;
   border: 0px;
 }
 
-.fullDisplay {
-  display: none;
-  min-height: 30vh;
-  border: 10px;
-  border-color: black;
+.edit { 
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: #fda085;
+  border: 0px;
   display: flex;
-  flex-direction: column;
-
+  width: 30px;
+  height: 20px;
 }

@@ -17,6 +17,7 @@ const [inputExperience, setInputExperience] = useState("");
   return (
     <div className="App">
     <header>CV App</header>
+    <div className="Elements">
     <InputForm 
     inputName={inputName}
     setInputName={setInputName}
@@ -40,6 +41,7 @@ const [inputExperience, setInputExperience] = useState("");
     inputEducation={inputEducation}
     inputExperience={inputExperience}
     />
+    </div>
     </div>
   )
 }

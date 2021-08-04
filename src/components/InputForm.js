@@ -34,20 +34,20 @@ const InputForm = ({setInputName, inputName, setInputEmail, inputEmail, inputPho
 
     return (
         <form id="form">
-            <label>Name: 
+            <label>Name: <br></br>
             <input value={inputName} onChange={inputNameHandler} className="name" type="text"></input>
             </label>
-            <label>Email: 
+            <label>Email: <br></br>
             <input  value={inputEmail} onChange={inputEmailHandler} className="email"></input>
             </label>
-            <label>Phone: 
+            <label>Phone: <br></br>
             <input value={inputPhone} onChange={inputPhoneHandler} className="phone"></input>
             </label>
             <div>Please provide your experience below! </div>
-            <label>Education:
+            <label>Education: <br></br>
             <input value={inputEducation} onChange={inputEducationHandler} className="education"></input>
             </label>
-            <label>Experience:
+            <label>Experience: <br></br>
             <input value={inputExperience} onChange={inputExperienceHandler} className="experience"></input>
             </label>
         <button onClick={submitHandler} className="submit" type="submit">Submit</button>
