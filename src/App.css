@@ -60,12 +60,23 @@ form {
   border: 0px;
 }
 
-.edit { 
+#edit { 
   color: white;
   font-family: "Poppins", sans-serif;
   background-color: #fda085;
   border: 0px;
-  display: flex;
+  display: none;
   width: 30px;
   height: 20px;
+}
+
+.nameDisplay {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.phoneDisplay, .emailDisplay, .experienceDisplay, .educationDisplay { 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
 }

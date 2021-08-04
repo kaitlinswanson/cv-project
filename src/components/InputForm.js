@@ -28,6 +28,7 @@ const InputForm = ({setInputName, inputName, setInputEmail, inputEmail, inputPho
         e.preventDefault();
         //hide display
         document.getElementById("form").style.display = "none"
+        document.getElementById("edit").style.display = "flex"
         //setInputName("");
     }
 

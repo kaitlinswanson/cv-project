@@ -10,13 +10,15 @@ const DisplayForm = ({inputName, inputEmail, inputPhone, inputEducation, inputEx
     return (
         <section className="fullDisplay">
         <div className="display">
-            <div className="nameDisplay">Name:{inputName}</div>
-            <div className="phoneDisplay">Phone:{inputPhone}</div>
-            <div className="emailDisplay">Email:{inputEmail}</div>
-            <div className="educationDisplay">Education:{inputEducation}</div>
-            <div className="experienceDisplay">Experience:{inputExperience}</div>
+            <div className="nameDisplay">{inputName}</div>
+            <div className="phoneDisplay">{inputPhone}</div>
+            <div className="emailDisplay">{inputEmail}</div>
+            <br></br>
+            <div className="educationDisplay">{inputEducation}</div>
+            <br></br>
+            <div className="experienceDisplay">{inputExperience}</div>
         </div>
-        <button onClick={editHandler} className="edit">Edit</button>
+        <button onClick={editHandler} className="edit" id="edit">Edit</button>
         </section>
     )
 }
